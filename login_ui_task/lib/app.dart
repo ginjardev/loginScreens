@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui_task/home.dart';
 import 'package:login_ui_task/login.dart';
+import 'package:login_ui_task/signup.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,7 +13,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: const MyHomePage(),
+      initialRoute: '/',
+      routes: {
+        '/home': (context) {
+          return const MyHomePage();
+        },
+        '/login': ((context) => const LoginPage()),
+        '/signup': (context) {
+          return const SignupPage();
+        }
+      },
     );
   }
 }
