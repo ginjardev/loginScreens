@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Column(
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(top: 80.0),
+                        margin: const EdgeInsets.only(top: 70.0),
                         child: const Text(
                           "Welcome back",
                           style: const TextStyle(
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(bottom: 40.0),
+                        margin: const EdgeInsets.only(bottom: 30.0),
                         child: const Text(
                           "Login to your account",
                           style: TextStyle(
@@ -120,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(
-                        height: 130,
+                        height: 100,
                       ),
                       Button(
                         child: const Text(
