@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 37, 97, 39)),
                     ),
-                    onPressed: () {},
+                    routeName: '/signup',
                   ),
                   const SizedBox(
                     height: 15,
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 238, 240, 238)),
                     ),
-                    onPressed: () {},
+                    routeName: '/login',
                   ),
                 ],
               )
