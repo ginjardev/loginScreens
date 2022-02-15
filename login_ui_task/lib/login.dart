@@ -34,35 +34,34 @@ class _LoginPageState extends State<LoginPage> {
               left: MediaQuery.of(context).size.width * 0.39,
               top: 120,
               child: Container(
-              alignment: Alignment.center,
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "images/butter.png",
-                      ),
-                      )
-                      ),
-            ),
+                alignment: Alignment.center,
+                height: 100,
+                width: 100,
+                decoration: const BoxDecoration(
+                    image: const DecorationImage(
+                  image: AssetImage(
+                    "images/butter.png",
+                  ),
+                )),
               ),
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 // SizedBox(height: 40,),
                 Container(
                   alignment: Alignment.bottomCenter,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius:
-                          BorderRadius.only(topLeft: Radius.circular(30))),
+                          const BorderRadius.only(topLeft: Radius.circular(60))),
                   child: Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(top: 30.0),
-                        child: Text(
+                        margin: const EdgeInsets.only(top: 80.0),
+                        child: const Text(
                           "Welcome back",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 33,
                             color: Color.fromARGB(255, 18, 80, 50),
@@ -70,8 +69,8 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(bottom: 10.0),
-                        child: Text(
+                        margin: const EdgeInsets.only(bottom: 40.0),
+                        child: const Text(
                           "Login to your account",
                           style: TextStyle(
                             color: Colors.grey,
@@ -89,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(13.0),
                         child: MyTextField(
                           text: "Password",
-                          child: Icon(Icons.visibility_off),
+                          child: const Icon(Icons.visibility_off),
                         ),
                       ),
 
@@ -99,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                           children: [
                             Radio(
                                 value: 1,
-                                activeColor: Color.fromARGB(255, 46, 112, 80),
+                                activeColor: const Color.fromARGB(255, 46, 112, 80),
                                 groupValue: id,
                                 onChanged: (index) {
                                   setState(() {
@@ -107,12 +106,12 @@ class _LoginPageState extends State<LoginPage> {
                                     id = 1;
                                   });
                                 }),
-                            Expanded(child: Text('Remember me')),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(
+                            const Expanded(child: const Text('Remember me')),
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: const Text(
                                 "Forgot password?",
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Color.fromARGB(255, 48, 139, 45),
                                 ),
                               ),
@@ -120,33 +119,36 @@ class _LoginPageState extends State<LoginPage> {
                           ],
                         ),
                       ),
-                      SizedBox(
-                        height: 80,
+                      const SizedBox(
+                        height: 130,
                       ),
                       Button(
-                          child: Text("Login",
-                          style: TextStyle(color: Colors.white),),
-                          onPressed: () {},
-                          color: Color.fromARGB(255, 0, 106, 66)),
-                      SizedBox(
+                        child: const Text(
+                          "Login",
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                        routeName: '/home',
+                        color: const Color.fromARGB(255, 0, 106, 66),
+                      ),
+                      const SizedBox(
                         height: 8,
                       ),
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               "Don't have an account?",
                               style: TextStyle(color: Colors.grey),
                             ),
-                            Text(
+                            const Text(
                               "Sign up",
                               style: TextStyle(
-                                color: Color.fromARGB(255, 48, 139, 45),
+                                color: const Color.fromARGB(255, 48, 139, 45),
                                 fontWeight: FontWeight.bold,
                               ),
                             )
                           ]),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       )
                     ],
