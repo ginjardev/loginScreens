@@ -9,9 +9,12 @@ class MyTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // color: Colors.amberAccent.shade100,
+      height: 45,
       child: TextField(
         style: TextStyle(fontWeight: FontWeight.bold),
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.all(10.0),
           border: OutlineInputBorder(
               borderRadius: BorderRadius.all(
             Radius.circular(50)
